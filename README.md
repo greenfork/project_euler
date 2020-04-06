@@ -1,9 +1,9 @@
 # Project Euler
 
-Originally located at https://projecteuler.net/
+First 100 programs are free to open to public so it is okay. This is just for
+me to track my progress across different computers.
 
-But all the pretty environment and automated tests to check the correctness and
-time bounds can be found at https://www.hackerrank.com/contests/projecteuler/challenges
+Originally located at https://projecteuler.net/
 
 # License
 

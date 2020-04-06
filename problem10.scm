@@ -1,0 +1,31 @@
+(define (eratosthenes n)
+  (let ((v (make-vector n 1)))
+	(vector-set! v 0 0)
+	(vector-set! v 1 0)
+	(letrec ((E (lambda (m step)
+				  (cond
+				   ((>= m n) #t)
+				   (else (begin
+						   (vector-set! v m 0)
+						   (E (+ m step) step)))))))
+	  (let loop ((p 0))
+		(when (< p n)
+		  (when (= (vector-ref v p) 1)
+			(E (* p p) p))
+		  (loop (add1 p)))))
+	v))
+
+(define (count-indices v)
+  (let ((l (vector-length v)))
+	(letrec ((C (lambda (i s)
+				  (cond
+				   ((= i l) s)
+				   (else (C (add1 i)
+							(if (= 1 (vector-ref v i))
+								(+ s i)
+								s)))))))
+	  (C 0 0))))
+
+(define (main args)
+  (let ((v (eratosthenes 2000000)))
+	(count-indices v)))

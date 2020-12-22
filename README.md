@@ -1,10 +1,10 @@
 # Project Euler
 
-First 100 programs are free to open to public so it is okay. This is just for
-me to track my progress across different computers.
+First 100 problems are freely shared across internet. Further problems
+will be kept in private repository.
 
-Originally located at https://projecteuler.net/
+Problems are located at https://projecteuler.net.
 
 # License
 
-Free for everyone, no license. See LICENSE.md for more info.
+Unlicense. See LICENSE.md for more information.

@@ -1,3 +1,6 @@
+# Requires bigints library:
+# nimble install bigints
+
 from algorithm import reverse
 from strutils import parseInt
 import bigints

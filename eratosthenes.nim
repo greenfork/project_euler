@@ -30,3 +30,8 @@ proc isPrime*(n: int): bool =
   for i in 0..limit:
     if primesArray[i] == true and n mod i == 0:
       return false
+
+iterator primesIterator*(): int =
+  for i in 0..<primesArray.len:
+    if primesArray[i]:
+      yield i
